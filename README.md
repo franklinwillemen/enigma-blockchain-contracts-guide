@@ -29,7 +29,7 @@ The command below tells Docker to follow the instructions in the Dockerfile_devn
 
 ```
 # Checkout and build with the compute module enabled, so we can deploy contracts.
-git checkout v0.1.0
+git checkout 168d64f5b5bd5b998a171cd24bba5d405e3a8229
 
 docker build -f Dockerfile_devnet -t enigmadev .
 ```
@@ -50,7 +50,7 @@ docker run -d \
  --name enigmadev enigmadev
 ```
 
-**NOTE**: The _engimadev_ docker container can be stopped by using (in a separate terminal) `docker stop enigmadev` and re-started 
+**NOTE**: The _enigmadev_ docker container can be stopped by using (in a separate terminal) `docker stop enigmadev` and re-started 
 using `docker start enigmadev`.
 
 ![](docker-run.png)
@@ -386,3 +386,8 @@ Smart Contracts in the Enigma Blockchain use cosmwasm. Therefore, for troublesho
 - [cosmwasm starter pack - project template](https://github.com/CosmWasm/cosmwasm-template)
 - [Setting up a local "testnet"](https://www.cosmwasm.com/docs/getting-started/using-the-sdk)
 - [cosmwasm docs](https://www.cosmwasm.com/docs/intro/overview) 
+
+# What's next?
+
+- [CosmWasm JS](cosmwasm-js.md)
+- [Frontend development](building-a-frontend.md)
